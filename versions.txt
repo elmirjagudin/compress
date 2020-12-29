@@ -1,0 +1,70 @@
+UBUNTU 20.04
+============
+
+Package: python-gi
+Status: install ok installed
+Priority: optional
+Section: python
+Installed-Size: 739
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: pygobject
+Version: 3.36.0-1
+Provides: python2.7-gi
+Depends: gir1.2-glib-2.0 (>= 1.48.0), python2 (<< 2.8), python2 (>= 2.7~), python2:any (<< 2.8), python2:any (>= 2.7~), libc6 (>= 2.14), libffi7 (>= 3.3~20180313), libgirepository-1.0-1 (>= 1.62.0-4~), libglib2.0-0 (>= 2.53.1)
+Suggests: python-gi-cairo
+Breaks: python-aptdaemon (<< 1.0), software-center (<= 5.6.0-0ubuntu2)
+Description: Python 2.x bindings for gobject-introspection libraries
+ GObject is an abstraction layer that allows programming with an object
+ paradigm that is compatible with many languages. It is a part of Glib,
+ the core library used to build GTK+ and GNOME.
+ .
+ This package contains the Python 2.x binding generator for libraries that
+ support gobject-introspection, i. e. which ship a gir1.2-<name>-<version>
+ package. With these packages, the libraries can be used from Python.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Homepage: https://wiki.gnome.org/Projects/PyGObject
+
+-----------------------
+
+Package: gir1.2-gcab-1.0
+Status: install ok installed
+Priority: optional
+Section: introspection
+Installed-Size: 21
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: gcab
+Version: 1.4-1
+Replaces: gir1.2-libgcab-1.0
+Depends: gir1.2-glib-2.0, libgcab-1.0-0 (>= 1.4)
+Breaks: gir1.2-libgcab-1.0
+Description: Microsoft Cabinet file manipulation library - gir bindings
+ libgcab provides functions to manipulate cabinet (.cab) files,
+ both for reading and writing their contents.
+ .
+ This package contains the GObject introspection repository bindings.
+Original-Maintainer: Stephen Kitt <skitt@debian.org>
+Homepage: https://wiki.gnome.org/msitools
+
+-----------------------
+
+Package: gcab
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 84
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 1.4-1
+Depends: libc6 (>= 2.4), libgcab-1.0-0 (>= 1.4), libglib2.0-0 (>= 2.26.0)
+Description: Microsoft Cabinet file manipulation tool
+ gcab can list, extract and create cabinet (.cab) files, commonly used
+ as archives to distribute software on Windows.
+ .
+ gcab is similar to cabextract but can create cabinet files.
+Original-Maintainer: Stephen Kitt <skitt@debian.org>
+Homepage: https://wiki.gnome.org/msitools
+
